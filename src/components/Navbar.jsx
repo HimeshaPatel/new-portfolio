@@ -32,6 +32,7 @@ const NavbarContainer = styled.div`
   font-size: 1rem;
   @media screen and (max-width: 768px) {
     padding: 0 12px; // Reduce padding on mobile
+    justify-content: space-between;
   }
 `;
 const NavLogo = styled(LinkR)`
@@ -41,10 +42,10 @@ const NavLogo = styled(LinkR)`
   font-size: 20px;
   text-decoration: none;
   font-weight: 700;
-    color: ${({theme}) => theme.text_primary};
-
-
-
+  color: ${({theme}) => theme.text_primary};
+  @media screen and (max-width: 768px) {
+    width: auto; // Adjust width on mobile
+  }
 `;
 
 const NavItems = styled.ul`
@@ -73,12 +74,13 @@ const NavLink = styled.a`
 
 const ButtonContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; // Align items to the right
   align-items: center;
   padding: 0 6px;
   @media screen and (max-width: 768px) {
-    width: auto; // Allow container to shrink
-    display: flex; // Keep flex display
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 `;
 
@@ -107,13 +109,10 @@ const GithubButton = styled.a`
 
 
 const MobileIcon = styled.div`
-  height: 100%;
-  
-  align-items: center;
-  color: ${({theme}) => theme.text_primary};
   display: none;
   @media screen and (max-width: 768px) {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 `;
 
@@ -184,9 +183,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <NavLogo to='/'>
           <span style={{ color: theme.primary }}>Himesha Patel</span>
         </NavLogo>
-        <MobileIcon>
-          <MenuRounded style={{ cursor: 'pointer' }} onClick={() => setIsOpen(!isOpen)} />
-        </MobileIcon>
+        
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
@@ -194,6 +191,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <NavLink href="#Projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
         </NavItems>
+        
+        <ButtonContainer>
+          <GithubButton href={Bio.github} target='_blank'>Github Profile</GithubButton>
+          <MobileIcon>
+          <MenuRounded style={{ cursor: 'pointer' }} onClick={() => setIsOpen(!isOpen)} />
+          </MobileIcon>
+          <ThemeToggle onClick={() => setDarkMode(!darkMode)}>
+            {darkMode ? <WbSunnyOutlined /> : <DarkModeOutlined />}
+          </ThemeToggle>
+        </ButtonContainer>
         <MobileMenu isOpen={isOpen}>
           <NavLink href="#about" onClick={() => setIsOpen(false)}>About</NavLink>
           <NavLink href="#skills" onClick={() => setIsOpen(false)}>Skills</NavLink>
@@ -204,15 +211,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             Github Profile
           </GithubButton>
         </MobileMenu>
-        <ButtonContainer>
-          <GithubButton href={Bio.github} target='_blank'>Github Profile</GithubButton>
-          <ThemeToggle onClick={() => setDarkMode(!darkMode)}>
-            {darkMode ? <WbSunnyOutlined /> : <DarkModeOutlined />}
-          </ThemeToggle>
-        </ButtonContainer>
       </NavbarContainer>
     </Nav>
   );
-};;
+};
 
 export default Navbar

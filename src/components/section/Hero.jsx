@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Bio } from '../../data/constants'
+import { Bio } from '../../data/constants.js'
 import Typewriter from 'typewriter-effect'
 // Update this line to use the public path
 const HeroImg = '/images/HeroImage.jpg'

@@ -10,6 +10,7 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, './src/assets'),
     },
   },
+  root: './', // Make sure this points to the directory containing index.html
   optimizeDeps: {
     include: ['three', '@react-three/fiber', '@react-three/drei']
   },
