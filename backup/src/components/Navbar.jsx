@@ -1,21 +1,46 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 import {Link as LinkR} from 'react-router-dom';
 import {Bio} from '../data/constants';
 import {MenuRounded} from '@mui/icons-material';
 
 
-const Nav = styled.nav`
-   background-color: ${({ theme }) => theme.bg};
+// const Nav = styled.nav`
+//   //  background-color: ${({ theme }) => theme.bg + 'e6'}; // Adding opacity
+//   // backdrop-filter: blur(10px);
+//   background-color: ${({ theme }) => theme.bg};
+//   height: 80px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 1rem;
+//   position: sticky;
+//   top: 0;
+//   z-index: 10;
+//   color: ${({ theme }) => theme.text_primary};
+//   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+//   transition: all 0.3s ease-in-out;
+
+//   // @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+//   //   -webkit-backdrop-filter: blur(10px);
+//   //   backdrop-filter: blur(10px);
+//   // }
+// `;
+
+const Nav = styled.div`
+  background-color: ${({ scrollNav, theme }) => 
+    scrollNav ? `${theme.card}cc` : 'transparent'};
   height: 80px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: 1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 10;
-  color: white;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: 0.3s all ease;
 `;
 
 const NavbarContainer = styled.div`
@@ -87,6 +112,7 @@ const GithubButton = styled.a`
   font-size: 16px;
   transition: all 0.6s ease-in-out;
   text-decoration: none;
+  width: 160px;
   &:hover {
     background: ${({theme}) => theme.primary};
     color: ${({theme}) => theme.text_primary};
@@ -134,14 +160,48 @@ z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 
 const Navbar = () => {
 
+  const [scrollNav, setScrollNav] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+    
+    // Test if the event listener is working
+    console.log('Event listener added');
+    
+    return () => {
+      window.removeEventListener('scroll', changeNav);
+    };
+  }, []);
+
+  // Test if the component is mounting
+  useEffect(() => {
+    console.log('Navbar mounted');
+  }, []);
+
+  // Test scroll state
+  useEffect(() => {
+    console.log('scrollNav:', scrollNav);
+  }, [scrollNav]);
+
   return (
-    <Nav>
+    <Nav scrollNav={scrollNav}>
     <NavbarContainer>
         <NavLogo to="/"><a style={{
-            color: "white"
-        }}>GeekforGeek</a></NavLogo>
+            color: scrollNav ? theme.text_primary : "white",
+            transition: "0.3s all ease",
+            fontSize: "20px",
+            fontWeight: "700",
+          }}>GeekforGeek</a></NavLogo>
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{
             color: "inherit"
@@ -174,6 +234,8 @@ const Navbar = () => {
         </ButtonContainer>
     </NavbarContainer>
     </Nav>
+
+    
   )
 }
 

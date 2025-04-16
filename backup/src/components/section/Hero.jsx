@@ -240,7 +240,7 @@ const Hero = () => {
                         
                     </TextLoop>
                     <SubTitle>{Bio.description}</SubTitle>
-                    <ResumeButton>Check Resume</ResumeButton>
+                    {/* <ResumeButton>Check Resume</ResumeButton> */}
                 </HeroLeftContainer>
                 <HeroRightContainer>
                             <Tilt>

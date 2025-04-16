@@ -86,13 +86,13 @@ const Footer = () => {
       <FooterWrapper>
         <Logo>Himesha Patel</Logo>
         <Nav>
-          <NavLink href="#About">About</NavLink>
-          <NavLink href="#Skills">Skills</NavLink>
-          <NavLink href="#Experience">Experience</NavLink>
+          <NavLink href="#about">About</NavLink>
+          <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
-          <NavLink href="#Education">Education</NavLink>
+          <NavLink href="#education">Education</NavLink>
         </Nav>
-        <SocialMediaIcons>
+        {/* <SocialMediaIcons>
           <SocialMediaIcon href={Bio.facebook} target="display">
             <FacebookRounded />
           </SocialMediaIcon>
@@ -105,7 +105,7 @@ const Footer = () => {
           <SocialMediaIcon href={Bio.insta} target="display">
             <Instagram />
           </SocialMediaIcon>
-        </SocialMediaIcons>
+        </SocialMediaIcons> */}
         <Copyright>&copy; 2025 Himesha Patel. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>

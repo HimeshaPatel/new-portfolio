@@ -1,87 +1,61 @@
 
-import styled, { ThemeProvider } from 'styled-components'
-import {darkTheme} from './utils/Themes'
-import './App.css'
-import Navbar from './components/Navbar'
-import { BrowserRouter} from 'react-router-dom'
-import Hero from './components/section/Hero'
-import StarsCanvas from './components/canvas/Stars' 
-import Skills from './components/section/Skills'
-import Experience from './components/section/Experience'
-import Education from './components/section/Education'
-import Projects from './components/section/Projects'
-import Footer from './components/section/Footer'
+import { useState, useEffect } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+import { darkTheme, lightTheme } from './utils/Themes';
+import './App.css';
+import Navbar from './components/Navbar';
+import { BrowserRouter } from 'react-router-dom';
+import Hero from './components/section/Hero';
+import StarsCanvas from './components/canvas/Stars';
+import Skills from './components/section/Skills';
+import Experience from './components/section/Experience';
+import Education from './components/section/Education';
+import Projects from './components/section/Projects';
+import Footer from './components/section/Footer';
+import { experiences, education } from './data/constants';
 
 const Body = styled.div`
   background-color: ${({theme}) => theme.bg};
+  background: ${({theme}) => theme.bg === "#FFFFFF" 
+    ? theme.gradient
+    : theme.bg};
   color: ${({theme}) => theme.text_primary};
   width: 100%;
-  min-height: 90vh;
-  // overflow-x: hidden;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
-  // background: transparent;
-`;
-
-const MainContent = styled.div`
-  position: relative;
-  z-index: 2;
-`;
-
-const Wrapper = styled.div`
-  padding-bottom: 100px;
-  background: linear-gradient(
-      38.73deg,
-      rgba(204, 0, 187, 0.15) 0%,
-      rgba(201, 32, 184, 0) 50%
-    ),
-    linear-gradient(
-      141.27deg,
-      rgba(0, 70, 209, 0) 50%,
-      rgba(0, 70, 209, 0.15) 100%
-    );
-  width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
-`;
-
-const StarsWrapper = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 0;
 `;
 
 function App() {
-  
+  // Initialize darkMode from localStorage or default to true
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedMode = localStorage.getItem('darkMode');
+    return savedMode !== null ? JSON.parse(savedMode) : true;
+  });
+
+  // Save darkMode to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('darkMode', JSON.stringify(darkMode));
+  }, [darkMode]);
 
   return (
-    <>
-      <ThemeProvider theme={darkTheme}>
-        <BrowserRouter>
-         <Body>
-          <StarsWrapper>
-         <StarsCanvas />
-         </StarsWrapper> 
-         <MainContent>
-        <Navbar />       
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <BrowserRouter>
+        <Body>
+          <StarsCanvas />
+          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
           <Hero />
-          <Wrapper>
           <Skills />
-          <Experience />
-          </Wrapper>
+          <Experience experiences={experiences} />
           <Projects />
-          <Wrapper>
-          <Education />
-          </Wrapper>
+          <Education education={education} description="My education has been a journey of self-discovery and growth. My educational details are as follows." />
           <Footer />
-         </MainContent>
         </Body>
-        </BrowserRouter>
-        </ThemeProvider>
-    </>
-  )
+      </BrowserRouter>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
+
+

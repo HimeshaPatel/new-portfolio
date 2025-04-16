@@ -9,6 +9,8 @@ export const darkTheme = {
   button: "#854CE6",
   white: "#FFFFFF",
   black: "#000000",
+  border: "#854CE650",
+  gradient: "linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%)"
 };
 
 export const lightTheme = {
@@ -18,5 +20,16 @@ export const lightTheme = {
   text_primary: "#111111",
   text_secondary: "#48494a",
   card: "#FFFFFF",
-  button: "#5c5b5b",
+  card_light: "#F4F6F8",
+  button: "#be1adb",
+  white: "#FFFFFF",
+  black: "#000000",
+  border: "#be1adb50",
+  gradient: "linear-gradient(45deg, rgba(190, 26, 219, 0.05) 0%, rgba(190, 26, 219, 0.1) 25%, rgba(190, 26, 219, 0.05) 50%, rgba(0, 70, 209, 0.05) 100%)"
 };
+
+
+
+
+
+

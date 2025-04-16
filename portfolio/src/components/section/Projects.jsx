@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { projects } from "../../data/constants";
 import ProjectCard from "../cards/ProjectCard";
 import Tilt from 'react-parallax-tilt';
+// import { motion } from 'framer-motion';
 
 const Container = styled.div`
   display: flex;
@@ -85,11 +86,60 @@ const Divider = styled.div`
 
 const CardContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   align-items: center;
   gap: 28px;
   flex-wrap: wrap;
 `;
+
+
+// 3D Flip animation
+// const FlipCard = styled(motion.div)`
+//   perspective: 1000px;
+// `;
+
+
+//Bounce and Scale animation
+
+// const bounceVariants = {
+//   initial: { scale: 0 },
+//   animate: { 
+//     scale: 1,
+//     transition: {
+//       type: "spring",
+//       stiffness: 260,
+//       damping: 20
+//     }
+//   },
+//   hover: { 
+//     scale: 1.05,
+//     transition: {
+//       type: "spring",
+//       stiffness: 400,
+//       damping: 10
+//     }
+//   }
+// };
+
+//float animation
+// const FloatingCard = motion.div;
+
+// const floatAnimation = {
+//   animate: {
+//     y: [0, -10, 0],
+//     transition: {
+//       duration: 2,
+//       repeat: Infinity,
+//       ease: "easeInOut"
+//     }
+//   }
+// };
+
+
+//Hover Scale and rotation Animation
+
+// const AnimatedCard = motion.div;
+
 
 const Projects = () => {
   const [toggle, setToggle] = useState("all");
@@ -115,24 +165,25 @@ const Projects = () => {
           </ToggleButton>
           <Divider />
           <ToggleButton
-            active={toggle === "web app"}
-            onClick={() => setToggle("web app")}
+            active={toggle === "frontend"}
+            onClick={() => setToggle("frontend")}
           >
-            WEB APP"S
+            FRONTEND 
           </ToggleButton>
-          <Divider />
+          <Divider />        
+             
           <ToggleButton
-            active={toggle === "android app"}
-            onClick={() => setToggle("android app")}
+            active={toggle === "webdesign"}
+            onClick={() => setToggle("webdesign")}
           >
-            ANDROID APP'S
+            WEB DESIGN
           </ToggleButton>
-          <Divider />
+          <Divider /> 
           <ToggleButton
-            active={toggle === "machine learning"}
-            onClick={() => setToggle("machine learning")}
+            active={toggle === "ui/ux"}
+            onClick={() => setToggle("ui/ux")}
           >
-            MACHINE LEARNING
+            UI/UX DESIGN
           </ToggleButton>
         </ToggleButtonGroup>
 
@@ -170,6 +221,90 @@ const Projects = () => {
         </CardContainer>
       </Wrapper>
     </Container>
+
+
+    //3D animation
+    // <Container>
+    //   <CardContainer>
+    //     {toggle === "all" &&
+    //       projects.map((project) => (
+    //         <FlipCard
+    //           key={project.id}
+    //           whileHover={{
+    //             rotateY: 180,
+    //             transition: { duration: 0.6 }
+    //           }}
+    //           style={{ transformStyle: "preserve-3d" }}
+    //         >
+    //           <ProjectCard project={project} />
+    //         </FlipCard>
+    //       ))}
+    //   </CardContainer>
+    // </Container>
+
+    //Bounce and Scale animation
+    //  <Container>
+    //   <CardContainer>
+    //     {toggle === "all" &&
+    //       projects.map((project) => (
+    //         <motion.div
+    //           key={project.id}
+    //           variants={bounceVariants}
+    //           initial="initial"
+    //           animate="animate"
+    //           whileHover="hover"
+    //         >
+    //           <ProjectCard project={project} />
+    //         </motion.div>
+    //       ))}
+    //   </CardContainer>
+    // </Container>
+
+
+    //float animation
+
+  // <Container>
+  //     <CardContainer>
+  //       {toggle === "all" &&
+  //         projects.map((project) => (
+  //           <FloatingCard
+  //             key={project.id}
+  //             initial={{ opacity: 0 }}
+  //             animate={["visible", "floating"]}
+  //             variants={{
+  //               visible: { opacity: 1 },
+  //               floating: floatAnimation.animate
+  //             }}
+  //             whileHover={{ scale: 1.05 }}
+  //           >
+  //             <ProjectCard project={project} />
+  //           </FloatingCard>
+  //         ))}
+  //     </CardContainer>
+  //   </Container>
+
+  // <Container>
+  //     <CardContainer>
+  //       {toggle === "all" &&
+  //         projects.map((project) => (
+  //           <AnimatedCard
+  //             key={project.id}
+  //             whileHover={{ 
+  //               scale: 1.05,
+  //               rotate: 2,
+  //               transition: { duration: 0.3 }
+  //             }}
+  //             whileTap={{ scale: 0.95 }}
+  //             initial={{ opacity: 0, y: 20 }}
+  //             animate={{ opacity: 1, y: 0 }}
+  //             transition={{ duration: 0.5 }}
+  //           >
+  //             <ProjectCard project={project} />
+  //           </AnimatedCard>
+  //         ))}
+  //     </CardContainer>
+  //   </Container>
+    
   );
 };
 

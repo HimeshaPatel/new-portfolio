@@ -1,6 +1,7 @@
 import React from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import styled from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const Top = styled.div`
   width: 100%;
@@ -83,9 +84,32 @@ const ItemWrapper = styled.div`
   gap: 8px;
 `;
 
+const TimelineContent = styled(VerticalTimelineElement)`
+  .vertical-timeline-element-content {
+    background: ${({ theme }) => theme.card};
+    color: ${({ theme }) => theme.text_primary};
+    box-shadow: ${({ theme }) => theme.shadow};
+    border: 1px solid ${({ theme }) => theme.primary + "50"};
+    border-radius: 6px;
+  }
+  
+  .vertical-timeline-element-content-arrow {
+    border-right: 7px solid ${({ theme }) => theme.card};
+  }
+`;
+
+const TimelineStyles = createGlobalStyle`
+  .vertical-timeline::before {
+    background: ${({ theme }) => theme.text_primary + '20'} !important;
+    width: 3px;
+  }
+`;
+
 const ExperienceCard = ({ experience }) => {
   return (
-    <VerticalTimelineElement
+    <>
+      <TimelineStyles />
+    <TimelineContent
       icon={
         <img
           width="100%"
@@ -99,11 +123,11 @@ const ExperienceCard = ({ experience }) => {
         display: "flex",
         flexDirection: "column",
         gap: "12px",
-        background: "#1d1836",
-        color: "#fff",
-        boxShadow: "rgba(23, 92, 230, 0.15) 0px 4px 24px",
-        backgroundColor: "rgba(17, 25, 40, 0.83)",
-        border: "1px solid rgba(255, 255, 255, 0.125)",
+        background: ({ theme }) => theme.card,
+        color: ({ theme }) => theme.text_primary,
+        boxShadow: ({ theme }) => theme.shadow,
+        // backgroundColor: "rgba(17, 25, 40, 0.83)",
+        border: `1px solid ${({ theme }) => theme.border}`,
         borderRadius: "6px",
       }}
       contentArrowStyle={{
@@ -135,7 +159,8 @@ const ExperienceCard = ({ experience }) => {
           </>
         )}
       </Description>
-    </VerticalTimelineElement>
+    </TimelineContent>
+    </>
   );
 };
 

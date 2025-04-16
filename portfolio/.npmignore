@@ -1,0 +1,10 @@
+src/
+.storybook/
+node_modules/
+.git/
+.gitignore
+*.log
+.DS_Store
+storybook-static/
+.env
+.env.*

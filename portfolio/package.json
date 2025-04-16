@@ -1,13 +1,22 @@
 {
-  "name": "portfolio",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "@himeshapatel/portfolio-components",
+  "version": "1.0.0",
+  "private": false,
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:lib": "vite build --config vite.lib.config.js",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm run build:lib"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -16,10 +25,10 @@
     "@mui/icons-material": "^6.4.7",
     "@mui/lab": "^6.0.0-beta.30",
     "@mui/material": "^6.4.7",
-    "@react-three/drei": "^9.88.7",
-    "@react-three/fiber": "^8.15.11",
+    "@react-three/drei": "^9.88.0",
+    "@react-three/fiber": "^8.14.5",
     "emailjs": "^4.0.3",
-    "framer-motion": "^12.4.11",
+    "framer-motion": "^10.16.4",
     "maath": "^0.10.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,20 +37,56 @@
     "react-router-dom": "^7.3.0",
     "react-scroll": "^1.9.3",
     "react-tilt": "^1.0.2",
-    "react-vertical-timeline-component": "^3.5.3",
-    "styled-components": "^6.1.15",
-    "three": "^0.158.0",
-    "typewriter-effect": "^2.21.0"
+    "react-vertical-timeline-component": "^3.6.0",
+    "styled-components": "^6.0.8",
+    "three": "^0.157.0",
+    "typewriter-effect": "^2.21.0",
+    "@storybook/react": "^7.0.0"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.6",
     "@eslint/js": "^9.21.0",
+    "@storybook/addon-essentials": "^8.6.7",
+    "@storybook/addon-interactions": "^8.6.7",
+    "@storybook/addon-links": "^8.6.7",
+    "@storybook/addon-onboarding": "^8.6.7",
+    "@storybook/blocks": "^8.6.7",
+    "@storybook/react": "^8.6.7",
+    "@storybook/react-vite": "^8.6.7",
+    "@storybook/test": "^8.6.7",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-storybook": "^0.11.6",
     "globals": "^15.15.0",
+    "prop-types": "^15.8.1",
+    "storybook": "^8.6.7",
     "vite": "^6.2.0"
-  }
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HimeshaPatel/new-portfolio/tree/b7444bb50ca2820c7c859bed39932ac2f3f0bb9b/portfolio"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "portfolio",
+    "ui"
+  ],
+  "author": "Himesha Patel",
+  "license": "MIT"
 }
+
+
