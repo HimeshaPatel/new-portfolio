@@ -7,5 +7,5 @@
   VITE_CJS_TRACE = "1"
   VITE_CJS_IGNORE_WARNING = "1"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+
+
