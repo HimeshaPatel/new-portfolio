@@ -38,7 +38,7 @@
     "react-scroll": "^1.9.3",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
-    "styled-components": "^6.0.8",
+    "styled-components": "^6.0.0",
     "three": "^0.157.0",
     "typewriter-effect": "^2.21.0",
     "@storybook/react": "^7.0.0"
@@ -72,8 +72,8 @@
     ]
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.x",
+    "react-dom": "^18.x"
   },
   "repository": {
     "type": "git",
@@ -88,5 +88,6 @@
   "author": "Himesha Patel",
   "license": "MIT"
 }
+
 
 
