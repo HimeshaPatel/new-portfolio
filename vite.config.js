@@ -8,16 +8,27 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
       '@assets': path.resolve(__dirname, './src/assets'),
+      'react': path.resolve(__dirname, './node_modules/react'),
     },
   },
-  root: './', // Make sure this points to the directory containing index.html
+  root: './',
   optimizeDeps: {
-    include: ['three', '@react-three/fiber', '@react-three/drei']
+    include: ['react', 'react-dom', 'styled-components', 'three', '@react-three/fiber', '@react-three/drei']
   },
   build: {
     commonjsOptions: {
-      include: [/three/, /@react-three/, /maath/]
+      include: [/three/, /@react-three/, /maath/, /node_modules/],
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM'
+        }
+      }
     }
   }
 });
+
 

@@ -18,6 +18,10 @@
     "build-storybook": "storybook build",
     "prepublishOnly": "npm run build:lib"
   },
+  "resolutions": {
+    "react": "^18.2.0",
+    "styled-components": "^6.0.0"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.14.0",
@@ -88,6 +92,7 @@
   "author": "Himesha Patel",
   "license": "MIT"
 }
+
 
 
 
