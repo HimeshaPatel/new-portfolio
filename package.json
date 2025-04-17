@@ -11,16 +11,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:lib": "vite build --config vite.lib.config.js",
-    "lint": "eslint .",
     "preview": "vite preview",
+    "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "prepublishOnly": "npm run build:lib"
-  },
-  "resolutions": {
-    "react": "^18.2.0",
-    "styled-components": "^6.0.0"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -44,8 +38,7 @@
     "react-vertical-timeline-component": "^3.6.0",
     "styled-components": "^6.0.0",
     "three": "^0.157.0",
-    "typewriter-effect": "^2.21.0",
-    "@storybook/react": "^7.0.0"
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
@@ -75,10 +68,6 @@
       "plugin:storybook/recommended"
     ]
   },
-  "peerDependencies": {
-    "react": "^18.x",
-    "react-dom": "^18.x"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/HimeshaPatel/new-portfolio/tree/b7444bb50ca2820c7c859bed39932ac2f3f0bb9b/portfolio"
@@ -92,6 +81,7 @@
   "author": "Himesha Patel",
   "license": "MIT"
 }
+
 
 
 
