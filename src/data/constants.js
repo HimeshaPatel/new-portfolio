@@ -226,7 +226,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/v2/D560BAQHKHSi1uo_P6Q/company-logo_100_100/company-logo_100_100/0/1735172198106/staah_com_logo?e=1748476800&v=beta&t=tt7hPmkl1lrxk6mOCI1SRzkojqTRvvHROI5CJExUUYk",
+    img: "/images/staah.png",
     role: "Sr. Frontend Engineer Developer",
     company: "Staah",
     date: "Oct 2023 - April 2024",
@@ -245,7 +245,7 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "https://media.licdn.com/dms/image/v2/C4D0BAQH-b1dCMS5D3w/company-logo_100_100/company-logo_100_100/0/1641369456211?e=1748476800&v=beta&t=v_GD_J9qHnhK_J0BUZlf4T_aK5OzL_lWMaDc0X4xYGU",
+    img: "/images/gainserv.png",
     role: "Full-stack Developer",
     company: "Gainserv Tech LLP",
     date: "June 2022 - Sep 2023",
@@ -267,7 +267,7 @@ export const experiences = [
   },
   {
     id: 2,
-    img: "https://media.licdn.com/dms/image/v2/D560BAQF5AbsUPmyVgA/company-logo_100_100/company-logo_100_100/0/1738001608971/casepoint_llc_logo?e=1748476800&v=beta&t=flZpBKRfzVLY5izfptBwWa5131zqw6tTOfX7zN7G3xM",
+    img: "/images/casepoint_llc.png",
     role: "Sr. Frontend Developer",
     company: "Casepoint Pvt. Ltd.",
     date: "Jan 2020 - May 2022",
@@ -288,7 +288,7 @@ export const experiences = [
   },
   {
     id: 3,
-    img: "https://media.licdn.com/dms/image/v2/D560BAQHsI294uemJZQ/company-logo_100_100/company-logo_100_100/0/1735789660957/yanoljacloudsolution_logo?e=1748476800&v=beta&t=q8GbrRDn5Ut3s8z4Ruf_4b26sJF2N6lXLDg0pfHXFwE",
+    img: "/images/yanjola.png",
     role: "Design Engineer",
     company: "eZee Technosys Pvt. Ltd.",
     date: "Oct 2015 - Jan 2018",
