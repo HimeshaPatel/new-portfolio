@@ -327,7 +327,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/v2/C4E0BAQFxrNBhNthctQ/company-logo_100_100/company-logo_100_100/0/1631307044701?e=1748476800&v=beta&t=-nauhy62wooVO-TZxj87adJ6clpva_R1uU41BPd2H9g",
+    img: "/images/utu.png",
     school: "Uka Tarsadia University, Surat, India",
     date: "Aug 2011 - June 2014",
     grade: "7.2 CGPA",
@@ -336,7 +336,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://media.licdn.com/dms/image/v2/D4D0BAQH1yhjAdu7CMA/company-logo_200_200/company-logo_200_200/0/1697802987964/veer_narmad_south_gujarat_university_surat_logo?e=1748476800&v=beta&t=kivSRz_r2eNbW1qVc8ywcA3RNSZywuJ7VqvqyVWFr6c",
+    img: "/images/vnsgu.png",
     school: "VNSGU, Surat, India",
     date: "June 2008 - May 2011",
     grade: "58%",
