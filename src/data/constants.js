@@ -348,6 +348,21 @@ export const education = [
 
 export const projects = [
   {
+    id: 22,
+    title: "Fizzy Soda",        
+    image:
+      "/images/fizzy-soda.png",
+    tags: [
+      "React Js",
+      "Tailwind CSS",
+      "Three.Js",
+      "GSAP",      
+    ],
+    category: "frontend",
+    github: "https://github.com/HimeshaPatel/fizzi-soda",
+    webapp: "https://soda.product.style/",
+  },
+  {
     id: 11,
     title: "iphone15 Pro Max",        
     image:
@@ -360,7 +375,7 @@ export const projects = [
     ],
     category: "frontend",
     github: "https://github.com/HimeshaPatel/iphone-15Pro-website",
-    webapp: "https://sprightly-raindrop-c70a36.netlify.app/",
+    webapp: "https://iphone.product.style/",
   },
   {
     id: 21,
