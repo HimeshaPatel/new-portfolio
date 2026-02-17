@@ -3,7 +3,7 @@ export const Bio = {
   roles: [
     "Front-End Developer",
     "Web Developer",
-    "UI Designer",    
+    "UI Designer",
   ],
   description:
     "Hello! I'm Himesha, a passionate Frontend Developer and Web Designer with 7+ years of experience. I specialize in creating responsive, user-centric web applications using HTML, CSS, jQuery, WordPress, SEO, Typescript, JavaScript, and frameworks like React and Node.js. I have hands-on experience in building RESTful APIs and server-side applications using Node.js and Express.js. My design skills encompass user research, wireframing, prototyping, and visual design with tools like Figma, Photoshop, and Adobe XD. I strive to blend aesthetics with functionality, ensuring seamless and engaging user experiences. Let's connect and create something amazing together!",
@@ -35,11 +35,11 @@ export const skills = [
         image:
           "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
       },
-      // {
-      //   name: "Angular Js",
-      //   image:
-      //     "https://camo.githubusercontent.com/8886130b3d8aba95dbdd7c4f9a41029606424cc06d1873c1ced87dd55a222fef/68747470733a2f2f616e67756c61722e696f2f6173736574732f696d616765732f6c6f676f732f616e67756c61722f616e67756c61722e737667",
-      // },
+      {
+        name: "Three Js",
+        image:
+          "https://canada1.discourse-cdn.com/flex035/uploads/threejs/optimized/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751_2_1016x1024.png",
+      },
       {
         name: "HTML",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
@@ -74,14 +74,13 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1280px-Tailwind_CSS_Logo.svg.png",
       },
-      
-     
       {
         name: "WordPress",
         image:
           "https://icon2.cleanpng.com/20180524/kpj/avqber973.webp",
       },
-      
+
+
     ],
   },
   {
@@ -110,37 +109,37 @@ export const skills = [
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
       },
-      
-      
+
+
       {
         name: "MySQL",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
       },
-      
+
       {
         name: "MongoDB",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
       },
-      
-       {
+
+      {
         name: "Postman",
         image:
-          "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
+          "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
       },
     ],
   },
   // {
   //   title: "DevOps",
   //   skills: [
-     
+
   //     {
   //       name: "Google Cloud",
   //       image:
   //         "https://static-00.iconduck.com/assets.00/google-cloud-platform-logo-icon-2048x1824-pg4wzspq.png",
   //     },
-     
+
   //     {
   //       name: "Jenkins",
   //       image:
@@ -167,8 +166,8 @@ export const skills = [
   //     },
   //   ],
   // },
- 
-  
+
+
   {
     title: "Others",
     skills: [
@@ -183,26 +182,20 @@ export const skills = [
           "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       },
       {
-        name: "Netlify",
+        name: "GSAP",
         image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
+          "https://miro.medium.com/1*wGdP-ym3kqQopOA9us8nXg.jpeg",
       },
       {
         name: "VS Code",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
       },
-     
-       {
+
+      {
         name: "AWS",
         image:
           "https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png",
-      },
-       
-       {
-        name: "terraForm",
-        image:
-          "https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png",
       },
       {
         name: "Adobe XD",
@@ -237,7 +230,7 @@ export const experiences = [
       "NodeJs",
       "Material UI",
       "HTML",
-      "CSS",      
+      "CSS",
       "Wordpress",
       "Figma"
     ],
@@ -254,7 +247,7 @@ export const experiences = [
       "Docker",
       "Terraform",
       "AWS",
-      "EC2",     
+      "EC2",
       "JavaScript",
       "TypeScript",
       "Node Js",
@@ -272,12 +265,12 @@ export const experiences = [
     company: "Casepoint Pvt. Ltd.",
     date: "Jan 2020 - May 2022",
     desc: "At an enterprise-level organization, I led the development of a React and JavaScript-based e-discovery platform, improving document review and legal workflows. I collaborated with backend teams using Node.js, Express.js, MongoDB, and .NET Core to optimize data handling and retrieval. I implemented CI/CD pipelines, Jest unit testing, and accessibility standards for a reliable user experience.",
-    
+
     skills: [
       "HTML5",
       "CSS3",
       "Javascript",
-      "React Js",      
+      "React Js",
       "CI/CD",
       ".Net",
       "Agile Methodology",
@@ -321,7 +314,7 @@ export const experiences = [
       "WordPress",
     ],
   },
-  
+
 ];
 
 export const education = [
@@ -343,20 +336,49 @@ export const education = [
     // desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
     degree: "Bachelor of Computer Science",
   },
-  
+
 ];
 
 export const projects = [
+   {
+    id: 24,
+    title: "Perfumes",
+    image:
+      "/images/perfume.png",
+    tags: [
+      "React Js",
+      "Tailwind CSS",      
+      "GSAP",
+    ],
+    category: "frontend",
+    // github: "https://github.com/HimeshaPatel/fizzi-soda",
+    webapp: "https://perfume.product.style/",
+  },
   {
     id: 22,
-    title: "Fizzy Soda",        
+    title: "Chips",
+    image:
+      "/images/chips.png",
+    tags: [
+      "React Js",
+      "Tailwind CSS",
+      "Three.Js",
+      "GSAP",
+    ],
+    category: "frontend",
+    github: "https://github.com/HimeshaPatel/chips",
+    webapp: "https://chips.product.style/",
+  },
+  {
+    id: 23,
+    title: "Fizzy Soda",
     image:
       "/images/fizzy-soda.png",
     tags: [
       "React Js",
       "Tailwind CSS",
       "Three.Js",
-      "GSAP",      
+      "GSAP",
     ],
     category: "frontend",
     github: "https://github.com/HimeshaPatel/fizzi-soda",
@@ -364,14 +386,14 @@ export const projects = [
   },
   {
     id: 11,
-    title: "iphone15 Pro Max",        
+    title: "iphone15 Pro Max",
     image:
       "/images/iphone15.jpg",
     tags: [
       "React Js",
       "Tailwind CSS",
       "Three.Js",
-      "GSAP",      
+      "GSAP",
     ],
     category: "frontend",
     github: "https://github.com/HimeshaPatel/iphone-15Pro-website",
@@ -380,13 +402,13 @@ export const projects = [
   {
     id: 21,
     title: "Parallax Scrolling Website",
-    
+
     image:
       "images/parralax-1.jpg",
     tags: [
       "HTML",
       "CSS",
-      "JavaScript",      
+      "JavaScript",
     ],
     category: "webdesign",
     github: "https://github.com/HimeshaPatel/HimeshaPatel.github.io",
@@ -400,7 +422,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     category: "webdesign",
     github: "https://github.com/HimeshaPatel/parallax-scrolling-website",
-    webapp: "https://parallax-scrolling-webapp.netlify.app/",    
+    webapp: "https://parallax-scrolling-webapp.netlify.app/",
   },
   {
     id: 1,
@@ -413,10 +435,10 @@ export const projects = [
       "Node Js",
       "Express Js",
       "Socket IO",
-      "Vite"     
+      "Vite"
     ],
     category: "frontend",
-    github: "https://github.com/HimeshaPatel/chat-app",    
+    github: "https://github.com/HimeshaPatel/chat-app",
   },
   {
     id: 4,
@@ -425,16 +447,16 @@ export const projects = [
       "images/windflower.png",
     tags: ["HTML", "CSS", "JavaScript", "Figma"],
     category: "webdesign",
-   
+
     webapp: "https://www.thewindflower.com/",
   },
- 
+
   {
     id: 3,
     title: "Client Registration",
     image:
       "images/client-registration.png",
-   tags: [
+    tags: [
       "React Js",
       "MongoDb",
       "Node Js",
@@ -443,7 +465,7 @@ export const projects = [
     ],
     category: "frontend",
     github: "https://github.com/HimeshaPatel/client-registration",
-   
+
   },
 
   {
@@ -451,34 +473,34 @@ export const projects = [
     title: "Clarent Institue",
     image:
       "images/clarent.png",
-   tags: ["WordPress", "HTML", "CSS", "ACF Plugin"],
+    tags: ["WordPress", "HTML", "CSS", "ACF Plugin"],
     category: "webdesign",
     webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
   },
- 
+
   {
     id: 18,
     title: "Onboarding - Dashboard",
     image:
       "images/onboarding.png",
-   tags: [ "Figma"],
+    tags: ["Figma"],
     category: "ui/ux",
     webapp: "https://www.figma.com/proto/BRIQzRxCNbOXysYIevGBHX/portfolio?node-id=39-4548&t=pM3P7wO371KAzQn3-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A3438",
   },
-  
+
   {
     id: 5,
     title: "Userlove",
     image:
       "images/userlove.png",
-    tags: ["WordPress", "Elementor", "HTML", "CSS","Figma"],
+    tags: ["WordPress", "Elementor", "HTML", "CSS", "Figma"],
     category: "webdesign",
     webapp: "https://www.userlove.io/",
   },
   {
     id: 6,
-    title: "Staah hotel software",    
-   image:
+    title: "Staah hotel software",
+    image:
       "images/staah.png",
     tags: ["WordPress", "Elementor", "HTML", "CSS"],
     category: "webdesign",
@@ -487,35 +509,35 @@ export const projects = [
   {
     id: 7,
     title: "American Boss",
-   image:
+    image:
       "images/americanaboss.jpg",
     tags: ["WordPress", "Elementor", "HTML", "CSS", "e-commerce", "woo-commerce"],
     category: "webdesign",
     webapp: "https://americanboss.com.au/",
   },
-  
- {
+
+  {
     id: 10,
     title: "Blogging App",
-     image:
+    image:
       "images/blog-app.png",
     tags: [
       "Node Js",
-      "MongoDb",     
+      "MongoDb",
       "Express Js",
       "Bootstrap",
       "JWT Aunthication",
       "EJS"
     ],
     category: "frontend",
-    github: "https://github.com/HimeshaPatel/BlogApp-NodeJs",   
+    github: "https://github.com/HimeshaPatel/BlogApp-NodeJs",
   },
-   {
+  {
     id: 9,
     title: "Pi2 Life",
     image:
       "images/pi2life.png",
-   tags: ["WordPress", "HTML", "CSS", "ACF Plugin"],
+    tags: ["WordPress", "HTML", "CSS", "ACF Plugin"],
     category: "webdesign",
     webapp: "https://pi2.life/home",
   },
@@ -525,31 +547,31 @@ export const projects = [
     title: "Kalyan Heritage",
     image:
       "images/kalyanheritage.png",
-   tags: ["WordPress", "HTML", "CSS"],
+    tags: ["WordPress", "HTML", "CSS"],
     category: "webdesign",
     webapp: "http://www.kalyanheritageandparadise.com/",
   },
-   {
+  {
     id: 2,
     title: "Habit Tracker",
     image:
       "images/habit-tracker.png",
-   tags: [
-      "React Js", 
+    tags: [
+      "React Js",
       "Material UI",
       "Vite",
-      "Redux"    
+      "Redux"
     ],
     category: "frontend",
-    github: "https://github.com/HimeshaPatel/habit-tracker-app/tree/main/habit-tracker",  
-    
+    github: "https://github.com/HimeshaPatel/habit-tracker-app/tree/main/habit-tracker",
+
   },
   {
     id: 11,
     title: "Prana Air",
     image:
       "images/paranaair.jpg",
-   tags: ["WordPress", "HTML", "CSS", "woo-commerce","e-commerce"],
+    tags: ["WordPress", "HTML", "CSS", "woo-commerce", "e-commerce"],
     category: "webdesign",
     webapp: "https://www.pranaair.com/",
   },
@@ -558,7 +580,7 @@ export const projects = [
     title: "Userlove - Figma",
     image:
       "images/userlove-figma.png",
-   tags: ["Figma"],
+    tags: ["Figma"],
     category: "ui/ux",
     webapp: "https://www.figma.com/proto/BRIQzRxCNbOXysYIevGBHX/portfolio?node-id=1-46&t=X8XU1Dif4JNXOAHt-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
   },
@@ -567,7 +589,7 @@ export const projects = [
     title: "NPS Design - UI/UX",
     image:
       "images/nps-design.png",
-   tags: ["Figma"],
+    tags: ["Figma"],
     category: "ui/ux",
     webapp: "https://www.figma.com/proto/BRIQzRxCNbOXysYIevGBHX/portfolio?node-id=1-27517&t=E6PEupdyFjr8b2eX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
   },
@@ -576,7 +598,7 @@ export const projects = [
     title: "Hospo Voucher",
     image:
       "images/hospovouchers.png",
-   tags: ["Wordpress", "HTML", "CSS","javascript"],
+    tags: ["Wordpress", "HTML", "CSS", "javascript"],
     category: "webdesign",
     webapp: "https://www.hospovouchers.com/",
   },
@@ -585,7 +607,7 @@ export const projects = [
     title: "Black Sheep Hotels",
     image:
       "images/blacksheep.png",
-   tags: ["Wordpress", "HTML", "CSS","javascript"],
+    tags: ["Wordpress", "HTML", "CSS", "javascript"],
     category: "webdesign",
     webapp: "https://www.blacksheephotels.com/",
   },
@@ -594,7 +616,7 @@ export const projects = [
     title: "Su Api",
     image:
       "images/su-api.png",
-   tags: [ "HTML", "CSS","javascript"],
+    tags: ["HTML", "CSS", "javascript"],
     category: "webdesign",
     webapp: "https://www.su-api.com/",
   },
@@ -603,17 +625,17 @@ export const projects = [
     title: "Hospitality Vouchers - Dashboard",
     image:
       "images/voucher-dashboard.png",
-   tags: [ "Figma"],
+    tags: ["Figma"],
     category: "ui/ux",
     webapp: "https://www.figma.com/proto/BRIQzRxCNbOXysYIevGBHX/portfolio?node-id=24-3438&t=VSi7FtnVkUkQLrX9-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A3438",
   },
-  
+
   {
     id: 19,
     title: "Userlove - Dashboard",
     image:
       "images/dashboard-small.png",
-   tags: [ "Figma"],
+    tags: ["Figma"],
     category: "ui/ux",
     webapp: "https://www.figma.com/proto/BRIQzRxCNbOXysYIevGBHX/portfolio?node-id=39-5011&t=pM3P7wO371KAzQn3-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A3438",
   },
@@ -622,12 +644,12 @@ export const projects = [
     title: "Dashboard",
     image:
       "images/Dashboard1-small.png",
-   tags: [ "Figma"],
+    tags: ["Figma"],
     category: "ui/ux",
     webapp: "https://www.figma.com/proto/BRIQzRxCNbOXysYIevGBHX/portfolio?node-id=39-5905&t=pM3P7wO371KAzQn3-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A3438",
   },
 
-  
+
 ];
 
 export const TimeLineData = [
